@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Expense Tracker</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-</head>
-<body>
-  <div class="header">
-    <h1 class="title">Simple Expense Tracker App</h1>
-    <h2 class="title">Add a new expense:</h2>
-  </div>
-  <div class="main-container">
-    <form id="textEntry">
-      <label for="date">Date:</label><br>
-      <input type="text" id="date" name="date"><br>
-      <label for="expense">Expense:</label><br>
-      <input type="text" id="expense" name="expense"><br>
-      <label for="amount">Amount($):</label><br>
-      <input type="text" id="amount" name="amount"><br>
-      <label for="location">Location:</label><br>
-      <input type="text" id="location" name="location"><br>
-      <input type="submit" id="submit" value="Submit" />
-    </form>
-  </div>
-</body>
+  <head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Simple Expense Tracker App</h1>
+      <h2 class="title">Add a new expense:</h2>
+    </div>
+    <div class="main-container">
+      <form id="textEntry">
+        <label for="date">Date:</label><br />
+        <input type="text" id="date" name="date" /><br />
+        <label for="expense">Expense:</label><br />
+        <input type="text" id="expense" name="expense" /><br />
+        <label for="amount">Amount($):</label><br />
+        <input type="text" id="amount" name="amount" /><br />
+        <label for="location">Location:</label><br />
+        <input type="text" id="location" name="location" /><br />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
 
-<table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Expense</th>
-        <th>Amount ($)</th>
-        <th>Location</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>9/14/22</td>
-        <td>Cat food</td>
-        <td>$55</td>
-        <td>PSP</td>
-      </tr>
-      <tr>
-        <td>9/15/22</td>
-        <td>Groceries</td>
-        <td>$140</td>
-        <td>Harvest Market</td>
-      </tr>
-    </tbody>
-  </table>
-</table>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Expense</th>
+          <th>Amount ($)</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9/14/22</td>
+          <td>Cat food</td>
+          <td>$55</td>
+          <td>PSP</td>
+        </tr>
+        <tr>
+          <td>9/15/22</td>
+          <td>Groceries</td>
+          <td>$140</td>
+          <td>Harvest Market</td>
+        </tr>
+        <tr>
+          <td>9/14/22</td>
+          <td>Cat food</td>
+          <td>$55</td>
+          <td>PSP</td>
+        </tr>
+        <tr>
+          <td>9/15/22</td>
+          <td>Groceries</td>
+          <td>$140</td>
+          <td>Harvest Market</td>
+        </tr>
+        <tr>
+          <td>9/14/22</td>
+          <td>Cat food</td>
+          <td>$55</td>
+          <td>PSP</td>
+        </tr>
+        <tr>
+          <td>9/15/22</td>
+          <td>Groceries</td>
+          <td>$140</td>
+          <td>Harvest Market</td>
+        </tr>
+        <tr>
+          <td>9/14/22</td>
+          <td>Cat food</td>
+          <td>$55</td>
+          <td>PSP</td>
+        </tr>
+        <tr>
+          <td>9/15/22</td>
+          <td>Groceries</td>
+          <td>$140</td>
+          <td>Harvest Market</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </html>

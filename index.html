@@ -10,9 +10,16 @@
     <h2 class="title">Add a new expense:</h2>
   </div>
   <div class="main-container">
-    <form id="dateEntry">
-      Date: <input type="text" />
-      <input type="submit" id="submit" value="Add" />
+    <form id="textEntry">
+      <label for="date">Date:</label><br>
+      <input type="text" id="date" name="date"><br>
+      <label for="expense">Expense:</label><br>
+      <input type="text" id="expense" name="expense"><br>
+      <label for="amount">Amount($):</label><br>
+      <input type="text" id="amount" name="amount"><br>
+      <label for="location">Location:</label><br>
+      <input type="text" id="location" name="location"><br>
+      <input type="submit" id="submit" value="Submit" />
     </form>
   </div>
 </body>

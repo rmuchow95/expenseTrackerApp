@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
   overflow-y: scroll;
-  display: flex;
+  display: table-header-group;
   flex-direction: column;
 }
 
@@ -26,3 +26,4 @@ body {
   display: flex;
   justify-content: center;
 }
+

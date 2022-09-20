@@ -14,3 +14,18 @@ form.addEventListener('submit', function(e) {
     }
   }
 });
+
+// progress made JS
+let btnAdd = document.getElementById("submit");
+let table = document.getElementById("table-container");
+let dateInput = document.getElementById("date-input");
+let expenseInput = document.getElementById("expense-input");
+let costInput = getElementById("amount-input"); 
+let locationInput = getElementById("location-input");
+
+btnAdd.addEventListener('click', () => {
+  let date = dateInput.value;
+  let expense = expenseInput.value;
+  let cost = costInput.value;
+  let location = locationInput.value;
+})

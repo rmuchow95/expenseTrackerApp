@@ -1,11 +1,16 @@
-const form = document.getElementById("textEntry");
+const form = document.getElementById('textEntry');
+form.addEventListener('submit', function(e) {
+  e.preventDefault()
 
-function addTableRow(e) {
-  e.preventDefault();
-  // let table = document.getElementById("table-container");
-  // let tableRow = table.insertRow(0);
-  console.log("click");
-}
+  const myForm = e.target;
 
-const submitButton = document.getElementById("submit");
-submitButton.addEventListener("click", addTableRow);
+  const formElements = form.elements;
+
+  for (let i = 0; i < formElements.length; i++) {
+    const element = formElements[i];
+    if (element.nodeName === "INPUT") {
+      console.log('${element.id} input is: ',
+  element.value);
+    }
+  }
+});

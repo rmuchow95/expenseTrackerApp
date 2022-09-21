@@ -1,31 +1,43 @@
-const form = document.getElementById('textEntry');
-form.addEventListener('submit', function(e) {
-  e.preventDefault()
+const form = document.getElementById("textEntry");
 
-  const myForm = e.target;
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  const formElements = form.elements;
+  //this gets the "target" of the event
+  const currentForm = e.target;
+  //this gets the elements of the current form
+  const formElements = currentForm.elements;
 
+  //name JS variables for both the body & row of the table
+  let tableBody = document.getElementById("table-body");
+  let tableRow = document.createElement("tr");
+  let deleteButton = deleteTableRow(tableRow);
+  //loops through each individual input element to print new values on the page
   for (let i = 0; i < formElements.length; i++) {
     const element = formElements[i];
+
     if (element.nodeName === "INPUT") {
-      console.log('${element.id} input is: ',
-  element.value);
+      let tableData = document.createElement("td");
+      let columnText = document.createTextNode(element.value);
+      //add new values to table data
+      tableData.appendChild(columnText);
+      //add new data to new row in table
+      tableRow.appendChild(tableData);
+      tableRow.appendChild(deleteButton);
+      //add table body element to table row
+      tableBody.appendChild(tableRow);
+
+      console.log("${element.id} input is: ", element.value);
     }
   }
 });
+function deleteTableRow(tableRow) {
+  let deleteButton = document.createElement("button");
+  deleteButton.appendChild(document.createTextNode("X"));
+  deleteButton.addEventListener("click", function () {
+    tableRow.remove();
 
-// progress made JS
-let btnAdd = document.getElementById("submit");
-let table = document.getElementById("table-container");
-let dateInput = document.getElementById("date-input");
-let expenseInput = document.getElementById("expense-input");
-let costInput = getElementById("amount-input"); 
-let locationInput = getElementById("location-input");
-
-btnAdd.addEventListener('click', () => {
-  let date = dateInput.value;
-  let expense = expenseInput.value;
-  let cost = costInput.value;
-  let location = locationInput.value;
-})
+    console.log(deleteTableRow);
+  });
+  return deleteButton;
+}

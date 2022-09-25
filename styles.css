@@ -5,6 +5,10 @@ table {
   flex-direction: column;
 }
 
+table button {
+  margin-left: 20px;
+}
+
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
@@ -26,4 +30,3 @@ body {
   display: flex;
   justify-content: center;
 }
-

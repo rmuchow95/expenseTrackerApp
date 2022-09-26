@@ -8,7 +8,7 @@ View it [here](https://rmuchow95.github.io/expenseTrackerApp/)
 
 **Summary**
 
-This is my sixth project, created entirely with vanilla Javascript, HTML and CSS.
+This is my sixth project, created entirely with vanilla Javascript, HTML and CSS. With this application, I got more experience traversing the DOM with Javascript. I also developed a better understanding of handling form submission and addEventListeners.
 
 **Author**
 

@@ -22,6 +22,7 @@ form.addEventListener("submit", function (e) {
       tableBody.appendChild(tableRow);
     }
   }
+  currentForm.reset();
 });
 function deleteTableRow(tableRow) {
   let deleteButton = document.createElement("button");
